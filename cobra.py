@@ -35,7 +35,7 @@ class Food:
         self.coordenadas = [x, y]  # guarda a posição da comida
 
         # desenha um círculo (oval) no canvas na posição sorteada
-        canvas.create_oval(x, y, x + tamanho_espaco, y + tamanho_espaco, fill=cor_food, tags='food')
+        canvas.create_oval(x, y, x + tamanho_espaco, y + tamanho_espaco, fill=cor_food, tags='food') # as coordenadas são o tamanho da imagem
 
 def proximo_turno(snake, food):
     # pega a posição atual da cabeça (primeiro elemento da lista)
